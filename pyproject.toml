@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ccwc"
+version = "0.1.0"
+description = ""
+authors = ["Abdujabbar MIRKHALIKOV <abdujabbar.mirkhalikov@prestataire.sewan.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poetry.scripts]
+ccwc = "ccwc.scripts.main:main"
