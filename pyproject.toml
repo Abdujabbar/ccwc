@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 pytest = "^7.4.0"
+flake8 = "^6.1.0"
+black = "^23.7.0"
 
 
 [build-system]

@@ -1,7 +1,6 @@
 from io import SEEK_END
 
 
-
 def process(stream, args):
     res = []
     count_bytes = args.count
@@ -11,17 +10,18 @@ def process(stream, args):
 
     if count_bytes:
         res.append(get_bytes(stream))
-    
+
     if count_lines:
         res.append(get_lines_count(stream))
 
     if count_words:
         res.append(get_words_count(stream))
-    
+
     if count_chars:
         res.append(get_chars_count(stream))
 
     return res
+
 
 def get_bytes(stream):
     stream.seek(0, SEEK_END)
@@ -29,9 +29,11 @@ def get_bytes(stream):
     stream.seek(0)
     return total_bytes
 
+
 def get_lines_count(stream):
     return sum([1 for _ in stream])
-    
+
+
 def get_words_count(stream):
     return sum([len(words.split()) for words in stream.readlines()])
 
