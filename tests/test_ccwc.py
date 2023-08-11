@@ -17,4 +17,6 @@ def test_process_files(filename, expected):
     full_path = get_fixture_path(filename)
 
     with open(full_path) as stream:
-        assert process(stream, Namespace(count=1, lines=1, words=1)) == expected
+        assert process(
+            stream, Namespace(count=1, lines=1, words=1)
+        ) == expected
