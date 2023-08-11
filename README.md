@@ -1,4 +1,8 @@
-Clone wc tool
+[![Maintainability](https://api.codeclimate.com/v1/badges/117ac5239a854f8c86df/maintainability)](https://codeclimate.com/github/Abdujabbar/ccwc/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/117ac5239a854f8c86df/test_coverage)](https://codeclimate.com/github/Abdujabbar/ccwc/test_coverage)
+
+About
 ================
 
 This project is just reimplementation of wc command in Linux.
