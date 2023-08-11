@@ -18,5 +18,5 @@ def test_process_files(filename, expected):
 
     with open(full_path) as stream:
         assert process(
-            stream, Namespace(count=1, lines=1, words=1)
+            stream, Namespace(c=1, l=1, w=1)
         ) == expected
