@@ -3,9 +3,7 @@ name: ci-lint
 on:
   push:
     branches:
-      - '**'
-    tags:
-      - '**'
+      - main
 
 jobs:
   build:
