@@ -1,4 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/117ac5239a854f8c86df/maintainability)](https://codeclimate.com/github/Abdujabbar/ccwc/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/117ac5239a854f8c86df/test_coverage)](https://codeclimate.com/github/Abdujabbar/ccwc/test_coverage)
+
 WC-Unix tool
 ================
 This project is a command-line tool which helps you to count the number of words, lines, and bytes in a files. It provides a simple interface to analyze the content of the file and display the counts accordingly. It's just clone of wc command from unix OS.
