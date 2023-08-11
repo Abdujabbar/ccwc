@@ -9,6 +9,7 @@ def parse_args():
     parser.add_argument("-c", action="store_true")
     parser.add_argument("-l", action="store_true")
     parser.add_argument("-w", action="store_true")
+    parser.add_argument("-m", action="store_true")
     parser.add_argument("files", nargs="*")
 
     return parser.parse_args()

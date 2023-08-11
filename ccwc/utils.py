@@ -6,6 +6,7 @@ def process(stream, args):
     count_bytes = args.c
     count_lines = args.l
     count_words = args.w
+    count_chars = args.m
 
     if not any([count_bytes, count_lines, count_words]):
         result.append(get_lines_count(stream))
@@ -20,6 +21,9 @@ def process(stream, args):
 
     if count_bytes:
         result.append(get_bytes(stream))
+
+    if count_chars:
+        result.append(get_chars_count(stream))
 
     return result
 
@@ -37,3 +41,7 @@ def get_lines_count(stream):
 def get_words_count(stream):
     stream.seek(0)
     return sum([len(words.split()) for words in stream.readlines()])
+
+
+def get_chars_count(stream):
+    return get_bytes(stream)
