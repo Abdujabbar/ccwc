@@ -20,7 +20,6 @@ def run(args):
                 lines.append(f"Not enough permission for read: {file}")
             except FileNotFoundError:
                 lines.append(f"File {file} doesn't exists")
-            
 
     return "\n".join(lines)
 
